@@ -22,6 +22,7 @@
 		FBD2F1EB25B1598B00BA967E /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1EA25B1598B00BA967E /* DoubleExtensions.swift */; };
 		FBD2F1F625B15D5F00BA967E /* KeyboardHeightStreamProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1F525B15D5F00BA967E /* KeyboardHeightStreamProvider.swift */; };
 		FBD2F1FB25B15D8400BA967E /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1FA25B15D8400BA967E /* TextFieldDelegate.swift */; };
+		FBD2F20125B16AFB00BA967E /* DashLinedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F20025B16AFB00BA967E /* DashLinedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		FBD2F1EA25B1598B00BA967E /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		FBD2F1F525B15D5F00BA967E /* KeyboardHeightStreamProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHeightStreamProvider.swift; sourceTree = "<group>"; };
 		FBD2F1FA25B15D8400BA967E /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
+		FBD2F20025B16AFB00BA967E /* DashLinedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashLinedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		FBD2F1F225B15D3000BA967E /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FBD2F1FF25B16AE100BA967E /* UIView */,
 				FBD2F1F425B15D4200BA967E /* Keyboard */,
 				FBD2F1F325B15D3900BA967E /* Delegates */,
 			);
@@ -211,6 +214,14 @@
 				FBD2F1F525B15D5F00BA967E /* KeyboardHeightStreamProvider.swift */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		FBD2F1FF25B16AE100BA967E /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				FBD2F20025B16AFB00BA967E /* DashLinedView.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +361,7 @@
 				FBD2F1D425B158EA00BA967E /* APIManager.swift in Sources */,
 				FBD2F1EB25B1598B00BA967E /* DoubleExtensions.swift in Sources */,
 				FBD2F17825B151F600BA967E /* SceneDelegate.swift in Sources */,
+				FBD2F20125B16AFB00BA967E /* DashLinedView.swift in Sources */,
 				FBD2F1E525B1594500BA967E /* Currency.swift in Sources */,
 				FBD2F1FB25B15D8400BA967E /* TextFieldDelegate.swift in Sources */,
 				FBD2F1BC25B1539500BA967E /* CurrencyConverterViewModel.swift in Sources */,
