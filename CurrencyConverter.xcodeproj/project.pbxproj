@@ -16,6 +16,10 @@
 		FBD2F1AD25B1533200BA967E /* CurrencyConverter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD2F1AC25B1533200BA967E /* CurrencyConverter.storyboard */; };
 		FBD2F1B425B1537700BA967E /* CurrencyConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1B325B1537700BA967E /* CurrencyConverterViewController.swift */; };
 		FBD2F1BC25B1539500BA967E /* CurrencyConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1BB25B1539500BA967E /* CurrencyConverterViewModel.swift */; };
+		FBD2F1D425B158EA00BA967E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1D325B158EA00BA967E /* APIManager.swift */; };
+		FBD2F1DD25B1592800BA967E /* APIResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1DC25B1592800BA967E /* APIResponseObject.swift */; };
+		FBD2F1E525B1594500BA967E /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1E425B1594500BA967E /* Currency.swift */; };
+		FBD2F1EB25B1598B00BA967E /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1EA25B1598B00BA967E /* DoubleExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		FBD2F1AC25B1533200BA967E /* CurrencyConverter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencyConverter.storyboard; sourceTree = "<group>"; };
 		FBD2F1B325B1537700BA967E /* CurrencyConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewController.swift; sourceTree = "<group>"; };
 		FBD2F1BB25B1539500BA967E /* CurrencyConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewModel.swift; sourceTree = "<group>"; };
+		FBD2F1D325B158EA00BA967E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FBD2F1DC25B1592800BA967E /* APIResponseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseObject.swift; sourceTree = "<group>"; };
+		FBD2F1E425B1594500BA967E /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		FBD2F1EA25B1598B00BA967E /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,9 @@
 		FBD2F17425B151F600BA967E /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
+				FBD2F1E925B1596700BA967E /* Extensions */,
+				FBD2F1DB25B1590F00BA967E /* Models */,
+				FBD2F1D225B158D900BA967E /* API */,
 				FBD2F1AB25B1531900BA967E /* UI */,
 				FBD2F17525B151F600BA967E /* AppDelegate.swift */,
 				FBD2F17725B151F600BA967E /* SceneDelegate.swift */,
@@ -145,6 +156,31 @@
 				FBD2F1BB25B1539500BA967E /* CurrencyConverterViewModel.swift */,
 			);
 			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		FBD2F1D225B158D900BA967E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FBD2F1D325B158EA00BA967E /* APIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FBD2F1DB25B1590F00BA967E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBD2F1DC25B1592800BA967E /* APIResponseObject.swift */,
+				FBD2F1E425B1594500BA967E /* Currency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBD2F1E925B1596700BA967E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FBD2F1EA25B1598B00BA967E /* DoubleExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,9 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD2F1DD25B1592800BA967E /* APIResponseObject.swift in Sources */,
 				FBD2F17625B151F600BA967E /* AppDelegate.swift in Sources */,
 				FBD2F1B425B1537700BA967E /* CurrencyConverterViewController.swift in Sources */,
+				FBD2F1D425B158EA00BA967E /* APIManager.swift in Sources */,
+				FBD2F1EB25B1598B00BA967E /* DoubleExtensions.swift in Sources */,
 				FBD2F17825B151F600BA967E /* SceneDelegate.swift in Sources */,
+				FBD2F1E525B1594500BA967E /* Currency.swift in Sources */,
 				FBD2F1BC25B1539500BA967E /* CurrencyConverterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
