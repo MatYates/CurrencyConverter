@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Currency Converter View Controller-->
         <scene sceneID="bjS-Jm-j2b">
             <objects>
-                <viewController id="N2p-OH-E1a" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurrencyConverterViewController" id="N2p-OH-E1a" customClass="CurrencyConverterViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I2U-3e-C1K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,6 +105,11 @@
                             <constraint firstItem="RBn-pn-qu5" firstAttribute="top" secondItem="5xI-Dg-5ny" secondAttribute="top" id="x6f-fM-aev"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="convertedCurrencyLabel" destination="5UP-o2-4NJ" id="Zb0-fN-Yff"/>
+                        <outlet property="currencyTextField" destination="gbA-WY-4Bu" id="AQy-uv-EyL"/>
+                        <outlet property="scrollView" destination="RBn-pn-qu5" id="dkN-Yo-PAm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6F-BU-74w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

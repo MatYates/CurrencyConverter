@@ -7,6 +7,10 @@
 
 import UIKit
 
-class CurrencyConverterViewModel {
+protocol ICurrencyConverterViewModel {
+    
+}
+
+class CurrencyConverterViewModel: ICurrencyConverterViewModel {
     
 }
