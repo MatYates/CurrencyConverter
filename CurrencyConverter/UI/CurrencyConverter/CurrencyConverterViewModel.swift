@@ -58,6 +58,9 @@ class CurrencyConverterViewModel: ICurrencyConverterViewModel {
             let currency = Currency(currencyCode: key, amount: value)
             tempCurrencies.append(currency)
         }
+        tempCurrencies.sort { (currency1, currency2) -> Bool in
+            return currency1.currencyCode < currency2.currencyCode
+        }
         self.currencies.append(contentsOf: tempCurrencies)
         self.selectedCurrency = currencies.first
     }

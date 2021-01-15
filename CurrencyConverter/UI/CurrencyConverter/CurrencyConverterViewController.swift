@@ -13,6 +13,7 @@ class CurrencyConverterViewController: UIViewController {
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var currencyTextField: UITextField!
     @IBOutlet private weak var convertedCurrencyLabel: UILabel!
+    @IBOutlet private weak var selectCurrencyView: SelectCurrencyView!
     
     //MARK: - Private properties
     private lazy var viewModel: ICurrencyConverterViewModel = {
@@ -34,11 +35,26 @@ class CurrencyConverterViewController: UIViewController {
         self.currenciesUpdated()
         self.setupKeyboardHeightStreamProvider()
         self.setupTextField()
+        self.setupSelectCurrencyView()
+        self.addToolbarToKeyboard()
+    }
+    
+    private func addToolbarToKeyboard() {
+        let bar = UIToolbar()
+        let done = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(resetTapped))
+        let space = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        bar.items = [space, done]
+        bar.sizeToFit()
+        self.currencyTextField.inputAccessoryView = bar
+    }
+    
+    @objc func resetTapped() {
+        self.currencyTextField.resignFirstResponder()
     }
     
     private func currenciesUpdated() {
         self.viewModel.currenciesUpdated = { [weak self] (currencies) in
-            
+            self?.selectCurrencyView.currencies = currencies
         }
     }
     
@@ -59,5 +75,13 @@ class CurrencyConverterViewController: UIViewController {
             scroll.contentInset = contentInset
             scroll.scrollIndicatorInsets = contentInset
         })
+    }
+    
+    private func setupSelectCurrencyView() {
+        self.selectCurrencyView.currencyChanged = { [weak self] (currency) in
+            self?.viewModel.updateSelectedCurrency(currency: currency, completion: { [weak self] (newConvertedCurrency) in
+                self?.convertedCurrencyLabel.text = newConvertedCurrency
+            })
+        }
     }
 }

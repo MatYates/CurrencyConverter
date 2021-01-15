@@ -23,6 +23,8 @@
 		FBD2F1F625B15D5F00BA967E /* KeyboardHeightStreamProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1F525B15D5F00BA967E /* KeyboardHeightStreamProvider.swift */; };
 		FBD2F1FB25B15D8400BA967E /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F1FA25B15D8400BA967E /* TextFieldDelegate.swift */; };
 		FBD2F20125B16AFB00BA967E /* DashLinedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F20025B16AFB00BA967E /* DashLinedView.swift */; };
+		FBD2F20725B1706100BA967E /* SelectCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F20625B1706100BA967E /* SelectCurrencyView.swift */; };
+		FBD2F20F25B170A300BA967E /* SelectCurrencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2F20E25B170A300BA967E /* SelectCurrencyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		FBD2F1F525B15D5F00BA967E /* KeyboardHeightStreamProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHeightStreamProvider.swift; sourceTree = "<group>"; };
 		FBD2F1FA25B15D8400BA967E /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		FBD2F20025B16AFB00BA967E /* DashLinedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashLinedView.swift; sourceTree = "<group>"; };
+		FBD2F20625B1706100BA967E /* SelectCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyView.swift; sourceTree = "<group>"; };
+		FBD2F20E25B170A300BA967E /* SelectCurrencyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,9 +223,19 @@
 		FBD2F1FF25B16AE100BA967E /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				FBD2F20525B1705500BA967E /* SelectCurrencyView */,
 				FBD2F20025B16AFB00BA967E /* DashLinedView.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		FBD2F20525B1705500BA967E /* SelectCurrencyView */ = {
+			isa = PBXGroup;
+			children = (
+				FBD2F20625B1706100BA967E /* SelectCurrencyView.swift */,
+				FBD2F20E25B170A300BA967E /* SelectCurrencyCollectionViewCell.swift */,
+			);
+			path = SelectCurrencyView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +370,7 @@
 			files = (
 				FBD2F1DD25B1592800BA967E /* APIResponseObject.swift in Sources */,
 				FBD2F17625B151F600BA967E /* AppDelegate.swift in Sources */,
+				FBD2F20F25B170A300BA967E /* SelectCurrencyCollectionViewCell.swift in Sources */,
 				FBD2F1B425B1537700BA967E /* CurrencyConverterViewController.swift in Sources */,
 				FBD2F1F625B15D5F00BA967E /* KeyboardHeightStreamProvider.swift in Sources */,
 				FBD2F1D425B158EA00BA967E /* APIManager.swift in Sources */,
@@ -363,6 +378,7 @@
 				FBD2F17825B151F600BA967E /* SceneDelegate.swift in Sources */,
 				FBD2F20125B16AFB00BA967E /* DashLinedView.swift in Sources */,
 				FBD2F1E525B1594500BA967E /* Currency.swift in Sources */,
+				FBD2F20725B1706100BA967E /* SelectCurrencyView.swift in Sources */,
 				FBD2F1FB25B15D8400BA967E /* TextFieldDelegate.swift in Sources */,
 				FBD2F1BC25B1539500BA967E /* CurrencyConverterViewModel.swift in Sources */,
 			);
