@@ -36,6 +36,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="€" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbA-WY-4Bu">
                                                 <rect key="frame" x="20" y="161" width="374" height="43"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="currencyToConverTextField" label="Enter currency to convert."/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -152,6 +153,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UP-o2-4NJ">
                                                 <rect key="frame" x="20" y="391" width="374" height="0.0"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="convertedCurrencyLabel"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -194,6 +196,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5xI-Dg-5ny"/>
                         <color key="backgroundColor" name="CurrencyGreen"/>
+                        <accessibility key="accessibilityConfiguration" identifier="currencyConverterView"/>
                         <constraints>
                             <constraint firstItem="RBn-pn-qu5" firstAttribute="leading" secondItem="I2U-3e-C1K" secondAttribute="leading" id="Afd-g9-4aD"/>
                             <constraint firstAttribute="trailing" secondItem="RBn-pn-qu5" secondAttribute="trailing" id="WfK-d6-xDd"/>
